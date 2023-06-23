@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="card col-md-4" *ngIf="products">
+    <div class="image-container">
+      <div class="card-image">
+        <div class="card-img">
+          <img src="/assets/img/{{products.imageUrl}}">
+        </div>
+      </div>
+      <div class="card-picture">
+        <img src="/assets/img/{{products.imageUrl}}">
+      </div>
+    </div>
+      <div class="card-content">
+        <div class="card-header">
+          <h3>{{products.name}}
+          <span>{{products.description}}</span>
+        </h3>
+        </div>
+        <div class="card-shop">
+          <span>Satıcı: &nbsp;
+          <a href="#" class="merchant-text">MSG TEKNOLOJİ</a>
+        </span>
+        </div>
+        <div class="oy-verme">
+            <input type="radio" name="oy" id="yildiz1">
+            <label for="yildiz1">★</label>
+          
+            <input type="radio" name="oy" id="yildiz2">
+            <label for="yildiz2">★</label>
+          
+            <input type="radio" name="oy" id="yildiz3">
+            <label for="yildiz3">★</label>
+          
+            <input type="radio" name="oy" id="yildiz4">
+            <label for="yildiz4">★</label>
+          
+            <input type="radio" name="oy" id="yildiz5">
+            <label for="yildiz5">★</label>
+          </div>
+          <div class="card-buy">
+            <span>{{products.price}} TL</span>
+          </div>
+          <div class="card-collection">
+            <i class="fa-solid fa-bookmark">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+            <span>Koleksiyona Ekle</span>
+          </div>
+          <div class="line"></div>
+          <div class="card-actions">
+            <div class="add-card" (click)="addTo($event)">Sepete Ekle</div>
+            <div class="card-favorite"><i class="fa-regular fa-heart fa-xl"></i></div>
+          </div>
+          <div class="card-time">
+            <i class="fa-solid fa-truck-moving"></i>&nbsp;&nbsp;
+            <strong>9 saat 16 dakika </strong>"içinde sipariş verirsen" <strong>bugün </strong>kargoda!
+          </div>
+          <div class="line"></div>
+          <div class="features">
+            <div class="features-all">ÜRÜNÜN TÜM ÖZELLİKLERİ</div>
+            <ul class="detail-desc-list">
+                <li>15 gün içinde ücretsiz iade mevcuttur.</li>
+                <li>Bu üründen en fazla 3 adet sipariş verilebilir. 3 adetin üzerindeki siparişleri Trendyol iptal etme hakkını saklı tutar.</li>
+                <li>Kampanya fiyatından satılmak üzere 10 adetten fazla stok sunulmuştur.</li>
+                <li>İncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.</li>
+            </ul>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>

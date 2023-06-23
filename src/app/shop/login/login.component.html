@@ -1,0 +1,15 @@
+<form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+    <div class="div-row">
+        <div class="col-5 mx-auto">
+            <div class="mb-3">
+        <label for="email" class="form-label">E-Posta Adresi:</label> 
+        <input type="email" ngModel name="mail" class="form-control" formControlName="email">     
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Şifre:</label> 
+        <input type="password" ngModel name="password" class="form-control" formControlName="password">     
+    </div>
+    <button name="register" type="submit" class="bg-dark text-light">Giriş Yap</button>
+        </div>
+    </div>
+</form>

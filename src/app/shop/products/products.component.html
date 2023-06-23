@@ -1,0 +1,39 @@
+<body>
+<div class="container">
+    <div class="row">
+        <div class="card col-md-4" *ngFor="let p of products">
+            <div routerLink="/details/{{p.id}}">
+            <div class="card-img">
+                <img src="/assets/img/{{p.imageUrl}}">
+            </div>
+            <div class="card-header">
+                <h3>{{p.name}}
+                <span>{{p.description | titlecase}}</span>
+            </h3>
+            </div>
+            <div class="oy-verme">
+                <input type="radio" name="oy" id="yildiz1">
+                <label for="yildiz1">★</label>
+              
+                <input type="radio" name="oy" id="yildiz2">
+                <label for="yildiz2">★</label>
+              
+                <input type="radio" name="oy" id="yildiz3">
+                <label for="yildiz3">★</label>
+              
+                <input type="radio" name="oy" id="yildiz4">
+                <label for="yildiz4">★</label>
+              
+                <input type="radio" name="oy" id="yildiz5">
+                <label for="yildiz5">★</label>
+              </div>
+            <div class="card-details">
+                <div class="price">
+                    <p>{{p.price | currency:"TRY"}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>

@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    background: #fefefe;
+}
+.card {
+    display: flex;
+    flex-direction: row; /* Değişiklik */
+    width: 956px;
+    height: 640px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    box-shadow: 0 1px 4px #0000000d;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .card-image {
+    display: block;
+    width: 400px;
+    height: 500px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    box-shadow: 0 1px 4px #0000000d;
+    padding-top: 45px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.card .card-image .card-img {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.card .card-image .card-img img {
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+.card-header{
+    display: flex;
+    background-color: #fff;
+    
+}  
+.card-header h3, .card-description p {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1b1b1b;
+}
+.card-shop span {
+    line-height: 2;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+}
+.card-shop a {
+    text-decoration: none;
+}
+.oy-verme{
+    padding-left: 20px;
+}
+.oy-verme input[type="radio"] {
+    
+    display: none;
+  }
+
+  .oy-verme label {
+    padding-left: 1px;
+    padding-top: 4px;
+    display: inline-block;
+    font-size: 15px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .oy-verme input[type="radio"]:checked + label {
+    color: rgb(175, 31, 5);
+  }
+  .card-buy {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    align-self: center;
+    margin-right: 6px;
+    color: rgb(175, 31, 5);
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .card-collection{
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    font-size: 13px;
+    text-align: right;
+  }
+  .card-collection:hover span {
+    width: 100%;
+    color: rgb(175, 31, 5);
+  }
+  .line {
+    flex-direction: row;
+    border-bottom: 1px solid rgba(151,151,151,.2);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  .card-actions {
+    display: flex;
+    align-items: center;
+  }
+  .add-card, .card-favorite{
+    margin-left: 20px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(175, 31, 5);
+    border-radius: 6px;
+    background: rgb(175, 31, 5);
+    font-size: 20px;
+    letter-spacing: .03em;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s step-start;
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-favorite {
+    position: relative;
+    width: 52px;
+    height: 50px;
+    margin: 0 0 0 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px #0000000d;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-favorite i {
+    color: gray;
+  }
+  .card-time{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    font-size: 12px;
+  }
+  .card-time i{
+    color:#068f3f;
+  }
+  .card-time strong{
+    color:black;
+  }
+  .features{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .features-all{
+    border: 1px solid #e6e6e6;
+    transition: all .3s ease;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    letter-spacing: .05rem;
+  }
+  .detail-desc-list {
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  .detail-desc-list li{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+    background: url(https://cdn.dsmcdn.com/web/production/ellipse.png) no-repeat 0 11px!important;
+    color: #333;
+    padding-left: 15px;
+}
+.card-picture{
+    margin-top: 30px;
+    margin-left: 60px;
+    min-width: 40px;
+    width: 40px;
+    height: 60px;
+    border-radius: 6px;
+    border: solid 1px #e6e6e6;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card-picture img{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: auto;
+    height: 100%;
+}
+
+  

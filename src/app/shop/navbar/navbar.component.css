@@ -1,0 +1,53 @@
+form.search {
+  margin: auto;
+  width: 37%;
+}
+form.search input {
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+padding: 0 15px;
+flex: 1;
+outline: 0;
+}
+form.search button {
+  height: 35px;
+  padding: 0 30px;
+  background: rgb(175, 31, 5);
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0px;
+}
+.menu-bar li {
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}
+.menu-bar a{
+  padding-left: 10px;
+}
+.menu-bar i{
+  padding-left: 10px;
+}
+
+
+  
